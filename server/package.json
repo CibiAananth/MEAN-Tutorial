@@ -1,0 +1,49 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "babel-node ./app/server.js",
+    "dev": "NODE_ENV=development npm run server",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel ./app --out-dir dist",
+    "watch": "nodemon"
+  },
+  "author": "Cibi Aananth <cibiaananth@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "agenda": "^2.1.0",
+    "agendash": "^1.0.0",
+    "argon2": "^0.25.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.1.0",
+    "es6-shim": "^0.35.5",
+    "event-dispatch": "^0.4.1",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.7.3",
+    "morgan": "^1.9.1",
+    "typedi": "^0.8.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2"
+  }
+}
