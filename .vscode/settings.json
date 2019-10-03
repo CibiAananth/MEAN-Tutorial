@@ -1,8 +1,0 @@
-{
-    "eslint.autoFixOnSave": true,
-    "cSpell.words": [
-        "agendash",
-        "mailgun",
-        "typedi"
-    ]
-}
